@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  allgood:
+    build: .
+    image: allgood
+    ports:
+      - "9999:9999"
+    extra_hosts:
+      - "loki:192.168.130.17"
+      - "kilo:192.168.130.18"
+      - "yolo:192.168.130.19"
+      - "lola:192.168.130.21"
+      - "poke:192.168.130.22"
+      - "juju:192.168.130.28"
+      - "otto:192.168.130.31"
+      - "seer:192.168.100.13"
